@@ -189,25 +189,23 @@ class AppliancesCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(7),
         color: CustomColor.cardColor,
       ),
-      child: Flexible(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              "assets/icons/fridge.png",
-              width: 30,
-              height: 55,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            "assets/icons/fridge.png",
+            width: 30,
+            height: 55,
+          ),
+          Text(
+            appliances[index],
+            style: const TextStyle(
+              fontSize: 8,
+              fontWeight: FontWeight.normal,
+              color: CustomColor.blackText,
             ),
-            Text(
-              appliances[index],
-              style: const TextStyle(
-                fontSize: 8,
-                fontWeight: FontWeight.normal,
-                color: CustomColor.blackText,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
